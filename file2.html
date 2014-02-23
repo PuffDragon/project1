@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dijit/form/Button",
+  "shapes/Rectangle",
+  "shapes/Line",
+  "shapes/Text",
+  "dijit/form/RadioButton",
+  "clipart/Close"
+]);
+</script>
+<style>@import "themes/claro/document.css";@import "themes/claro/claro.css";@import "lib/shapes/shapes.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body data-maq-flow-layout="absolute" data-maq-comptype="sketchhifi" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{'states':['Show image','Show map'],'current':'Show image','focus':'Show image'}">
+ <input type="button" data-dojo-type="dijit/form/Button" intermediateChanges="false" label="Show dialog" iconClass="dijitNoIcon" style="position: absolute; z-index: 900; left: 58px; top: 39px;"></input>
+ <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; position: absolute; z-index: 900; left: 54px; top: 125px; width: 334px; height: 189px; display: none;" data-maq-deltas="{'Show image':{'style':[{'display':''}]}}"><span data-dojo-type="shapes/Line" startarrow="none" style="position: absolute; z-index: 900; left: -2px; top: 49px; width: 340px; height: 6px;" points="0,0,334,0"></span><span data-dojo-type="shapes/Text" style="font-size: 14px; position: absolute; z-index: 900; left: 12px; top: 16px;">My dialog</span>
+<input showlabel="true" type="radio" data-dojo-type="dijit/form/RadioButton" style="position: absolute; z-index: 900; left: 33px; top: 80px;"></input>
+<input showlabel="true" type="radio" data-dojo-type="dijit/form/RadioButton" style="position: absolute; z-index: 900; left: 33px; top: 119px;"></input>
+<span data-dojo-type="shapes/Text" style="font-size: 14px; position: absolute; z-index: 900; left: 50px; top: 77px;">Show image</span><span data-dojo-type="shapes/Text" style="font-size: 14px; position: absolute; z-index: 900; left: 50px; top: 116px;">Show map</span>
+<img data-dojo-type="clipart/Close" style="position: absolute; z-index: 900; left: 296px; top: 17px;"></img>
+</div>
+</body>
+</html>

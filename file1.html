@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "shapes/Rectangle",
+  "shapes/Text",
+  "clipart/Close",
+  "clipart/Map",
+  "dijit/form/ComboBox",
+  "dijit/form/Button"
+]);
+</script>
+<style>@import "themes/claro/document.css";@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body data-maq-flow-layout="absolute" data-maq-comptype="sketchlofi" data-maq-ws="collapse" data-maq-appstates="{}" class="claro" id="myapp">
+ <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; position: absolute; z-index: 900; width: 429px; height: 369px; left: 35px; top: 53px;">
+  <img data-dojo-type="clipart/Map" style="position: absolute; z-index: 900; left: 14.391670227050781px; top: 46.5px; width: 221px; height: 222.01666259765625px;"></img>
+  <select data-dojo-type="dijit/form/ComboBox" value="Item 1" intermediateChanges="false" trim="false" uppercase="false" lowercase="false" propercase="false" invalidMessage="$_unset_$" pageSize="Infinity" searchDelay="200" style="position: absolute; z-index: 900; width: 129px; left: 251px; top: 46.5px;">
+  <option value="Item 1" selected="true">
+      Item 1</option>
+    <option value="Item 2">
+      Item 2</option>
+    <option value="Item 3">
+      Item 3</option>
+  </select>
+  <input type="button" data-dojo-type="dijit/form/Button" intermediateChanges="false" label="Button" iconClass="dijitNoIcon" style="position: absolute; z-index: 900; left: 254px; top: 132px;"></input>
+</div>
+ <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; position: absolute; z-index: 900; height: 27px; left: 31px; top: 53px; width: 430px;"><span data-dojo-type="shapes/Text" style="font-size: 14px; position: absolute; z-index: 900; left: 6px; top: 3px;">tite</span>
+<img data-dojo-type="clipart/Close" style="position: absolute; z-index: 900; left: 413px; top: 4px;"></img>
+</div>
+</body>
+</html>
